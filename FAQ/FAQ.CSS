@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(./FAQ.webp);
+    background-color: rgb(126, 150, 152);
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -15,9 +15,9 @@ body{
 }
 .content {
     width: 50%;
-    background-color: white;
+    background-color: rgb(221, 221, 221);
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 .content .title{
     font-size: 1.5rem;
@@ -56,4 +56,39 @@ body{
     content: '-';
     font-size: 30px;
     transition: .5s;
+}
+
+@media screen and (max-width: 830px){
+    .content {
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 477px){
+    .content {
+        width: 90%;
+    }
+    .content .title{
+        font-size: 1rem;
+        margin: 15px;
+    }
+    .content .container .question{
+        font-size: 15px;
+        padding: 12px 0px;
+    }
+    .content .container .answer{
+       font-size: 15px;
+       padding-top: 8px;
+    }
+    .content .container.jaya .answer{
+        height: 170px;
+    }
+    .content .container.jaya .question{
+        font-size: 10px;
+    }
+    .content .container.jaya .question::after{
+        content: '-';
+        font-size: 15px;
+}
+
 }
